@@ -1,3 +1,5 @@
+import { Button } from "flowbite-react";
+
 const MainPage = () => {
   return (
     <div className={"container mx-auto my-8"}>
@@ -27,6 +29,9 @@ const MainPage = () => {
           consequat, vel illum dolore eu feugiat nulla facilisis.
         </p>
       </article>
+      <div className={"flex flex-col items-center justify-center mt-8"}>
+        <Button>Subscribe!</Button>
+      </div>
     </div>
   );
 };
