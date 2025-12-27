@@ -1,5 +1,6 @@
+import { ThemeProvider } from "flowbite-react";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Oswald } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -9,6 +10,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const oswald = Oswald({
+  variable: "--font-oswald-var",
   subsets: ["latin"],
 });
 
@@ -24,11 +30,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <ThemeProvider root>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} antialiased`}
+        >
+          <div>{children}</div>
+        </body>
+      </ThemeProvider>
     </html>
   );
 }
