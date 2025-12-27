@@ -9,16 +9,22 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@types/lodash": "^4.17.21",
+    "@types/ramda": "^0.31.1",
+    "lodash": "^4.17.21",
     "next": "16.1.1",
+    "prettier": "^3.7.4",
+    "ramda": "^0.32.0",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@tailwindcss/typography": "^0.5.19",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^9",
+    "eslint": "^9.39.2",
     "eslint-config-next": "16.1.1",
     "tailwindcss": "^4",
     "typescript": "^5"
