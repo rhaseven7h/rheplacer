@@ -1,3 +1,12 @@
+/*
+ * Copyright (c) 2025 Gabriel Medina (Rhaseven7h).
+ * All rights reserved.
+ *
+ * This source code is proprietary and confidential.
+ * Unauthorized copying of this file, via any medium, is strictly prohibited.
+ *
+ */
+
 import { ThemeProvider } from "flowbite-react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Oswald } from "next/font/google";
