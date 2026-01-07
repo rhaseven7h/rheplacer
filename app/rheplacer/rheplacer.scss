@@ -1,9 +1,6 @@
 /*!
- * Copyright (c) 2025 Gabriel Medina (Rhaseven7h).
- * All rights reserved.
- *
- * This source code is proprietary and confidential.
- * Unauthorized copying of this file, via any medium, is strictly prohibited.
+ * Copyright (c) 2025-2026 Gabriel Medina. All rights reserved.
+ * This software and associated documentation files are proprietary to Gabriel Medina. Unauthorized copying of this file, via any medium, is strictly prohibited.
  *
  */
 
@@ -13,31 +10,31 @@
   display: grid;
   gap: 0;
   height: 100vh;
-  grid-template-columns: 250px auto;
+  grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: 'rh-header rh-header' 'rh-sidebar rh-content' 'rh-footer rh-footer';
 
   div {
-    @apply p-4 border border-gray-400;
+    // @apply p-4 border border-gray-400;
   }
 
   .rh-header {
     grid-area: rh-header;
-    @apply bg-red-200;
+    @apply border-b border-b-gray-200 shadow z-50;
   }
 
   .rh-sidebar {
     grid-area: rh-sidebar;
-    @apply bg-green-200;
+    // @apply bg-green-200;
   }
 
   .rh-content {
     grid-area: rh-content;
-    @apply bg-blue-200;
+    @apply p-4;
   }
 
   .rh-footer {
     grid-area: rh-footer;
-    @apply bg-violet-200;
+    @apply border-t border-t-gray-200 shadow-[0_-2px_2px_rgba(0,0,0,0.05)] z-50;
   }
 }
