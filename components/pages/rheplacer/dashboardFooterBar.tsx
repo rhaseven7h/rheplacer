@@ -67,6 +67,7 @@ const DashboardFooterBar = () => {
             href="https://flowbite.com/"
             className="hover:underline"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Flowbite
           </a>
