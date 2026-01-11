@@ -62,7 +62,7 @@ const DashboardFooterBar = () => {
           </li>
         </ul>
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          Copyright © 2022{" "}
+          Copyright © {new Date().getFullYear()}{" "}
           <a
             href="https://flowbite.com/"
             className="hover:underline"
