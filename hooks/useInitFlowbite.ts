@@ -14,7 +14,7 @@ import { useEffect } from "react";
 const useInitFlowbite = () => {
   useEffect(() => {
     initFlowbite();
-  });
+  }, []);
 };
 
 export default useInitFlowbite;
