@@ -1,0 +1,81 @@
+/*
+ * Copyright (c) 2025 Gabriel Medina (Rhaseven7h).
+ * All rights reserved.
+ *
+ * This source code is proprietary and confidential.
+ * Unauthorized copying of this file, via any medium, is strictly prohibited.
+ *
+ */
+
+const DashboardFooterBar = () => {
+  return (
+    <footer className="p-4 bg-white rounded-lg shadow xl:flex xl:items-center xl:justify-between md:p-6 xl:p-8 dark:bg-gray-800 antialiased">
+      <div className="flex items-center mb-3 font-light text-gray-500 dark:text-gray-400 xl:mb-0">
+        <p>Looking for language selection?</p>
+        <a
+          href="#"
+          className="flex items-center ml-1 font-medium text-gray-900 dark:text-white hover:underline"
+        >
+          Unified Settings
+          <svg
+            className="ml-1 w-3.5 h-3.5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 18"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+            />
+          </svg>
+        </a>
+      </div>
+      <div className="space-y-4 sm:flex sm:items-center sm:justify-between sm:space-y-0">
+        <ul className="flex flex-wrap items-center">
+          <li>
+            <a
+              href="#"
+              className="mr-4 text-gray-900 underline hover:no-underline md:mr-6 dark:text-white"
+            >
+              Terms
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              className="mr-4 text-gray-900 underline hover:no-underline md:mr-6 dark:text-white"
+            >
+              Privacy
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              className="mr-4 text-gray-900 underline hover:no-underline md:mr-6 dark:text-white"
+            >
+              Cookies
+            </a>
+          </li>
+        </ul>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          Copyright © {new Date().getFullYear()}{" "}
+          <a
+            href="https://flowbite.com/"
+            className="hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Flowbite
+          </a>
+          . All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+};
+
+export default DashboardFooterBar;
